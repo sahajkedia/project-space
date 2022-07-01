@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  width: auto;
+  padding: 0.7rem 1rem;
+  border: none;
+  background-color: #09A407;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  /* box-shadow: 2px 2px 20px var(--grey); */
+  border: 2px #09A407;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* width: '40%', backgroundColor: '#f6f6f6', height: 40, border: '2px solid #eeeeee', borderRadius: 5; */
+
+input {
+  width: 100%;
+  background-color: var(--background);
+  border: none;
+  height: 45px;
+  border-bottom: 2.5px solid var(--grey);
+  /* border-radius: 10px; */
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 10px; */
+  transition: 0.2s ease-in;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+textarea {
+  width: 100%;
+  background-color: var(--background);
+  border: none;
+  min-height: 130px;
+  border: 2.5px solid var(--grey);
+  padding: 10px;
+  /* border-radius: 10px; */
+  margin-right: 1rem;
+  
+  /* padding-left: 10px; */
+  transition: 0.2s ease-in;
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--textColor);
+  border-radius: 5px;
+  overflow-y: auto;
+  word-wrap:break-word;
+  resize: none;
+  box-sizing: border-box;
+}
+textarea::placeholder {
+  color: #ababab;
+  font-size: 15px;
+}
+
+textarea:focus {
+  border: 2.5px solid #09A407;
+  transition: 0.2s ease-in;
+}
+
+
+input::placeholder {
+  color: #ababab;
+  font-size: 16.5px;
+  letter-spacing: 0.3px;
+}
+
+input:focus {
+  border-bottom: 2.5px solid #09A407;
+  transition: 0.2s ease-in;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Mulish';
+  font-size: 15px;
+  font-weight: 700;
+  color: #232323;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.Toastify__toast {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: none !important;
+  bottom: 20px;
+  z-index: 99999;
+}
+
+.Toastify__toast--success {
+  background-color: #29C21A;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: none;
+  bottom: 20px;
+  z-index: 99999;
+}
+
+.Toastify__toast--error {
+  box-shadow: none;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+ 
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--sub); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-flex;
+  flex-direction: row; /* Needed to add space between the bullet and the text */
+  width: 10px;
+  margin-right: 15px;
+}
